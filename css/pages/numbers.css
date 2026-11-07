@@ -110,6 +110,11 @@
 	color: #62736c;
 }
 
+/* pseudo-element ::first-letter: the caption always starts with a capital letter */
+.numbers-table caption::first-letter {
+	text-transform: uppercase;
+}
+
 .numbers-table th,
 .numbers-table td {
 	padding: 0.75rem 1rem;
