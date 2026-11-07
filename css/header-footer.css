@@ -269,3 +269,50 @@
 		width: 10rem;
 	}
 }
+
+/* small tablets: from 769px to 1023px the menu does not fit in one row,
+	so the burger menu is shown here too (the header keeps its pc look) */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+	.site-header nav {
+		justify-self: end;
+	}
+
+	.menu-button {
+		display: block;
+		font-size: 2rem;
+		line-height: 1;
+		cursor: pointer;
+	}
+
+	.site-header.dark .menu-button {
+		color: #ffffff;
+	}
+
+	/* the menu opens under the header as a one-column grid */
+	.site-header nav > ul {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		display: none;
+		grid-auto-flow: row;
+		justify-content: stretch;
+		padding: 0.5rem 1.5rem 1rem;
+		background-color: #ffffff;
+		border-bottom-left-radius: 1rem;
+		border-bottom-right-radius: 1rem;
+		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+	}
+
+	.site-header.dark nav > ul {
+		background-color: rgba(59, 59, 59, 0.95);
+	}
+
+	.menu-toggle:checked ~ ul {
+		display: grid;
+	}
+
+	.site-header nav a {
+		font-size: 1.125rem;
+	}
+}
