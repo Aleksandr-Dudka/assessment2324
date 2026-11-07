@@ -10,7 +10,7 @@
 }
 
 .numbers-stats {
-	background-color: var(--color-primary);
+	background-color: #387922;
 }
 
 .numbers-stats .stats {
@@ -25,7 +25,7 @@
 	justify-content: space-between;
 	align-items: center;
 	column-gap: 2rem;
-	padding: 4.5rem 4% 3rem var(--page-gutter);
+	padding: 4.5rem 4% 3rem 10.9%;
 }
 
 .compare article {
@@ -57,9 +57,9 @@
 	grid-template-columns: minmax(0, 37.75rem);
 	align-content: center;
 	min-height: 50.75rem;
-	padding: 5rem var(--page-gutter);
+	padding: 5rem 10.9%;
 	color: #f5f2e8;
-	background-color: var(--color-primary);
+	background-color: #387922;
 	background-image: linear-gradient(to right, rgba(56, 121, 34, 0.98), rgba(56, 121, 34, 0.85) 34%, rgba(56, 121, 34, 0)), url("../../img/students-night.jpg");
 	background-position: center;
 	background-size: cover;
@@ -90,11 +90,11 @@
 
 .metro img {
 	width: 100%;
-	border-radius: var(--radius-md);
+	border-radius: 0.75rem;
 }
 
 .numbers-table {
-	padding: 3rem var(--page-gutter);
+	padding: 3rem 10.9%;
 }
 
 .numbers-table table {
@@ -129,8 +129,8 @@
 	font-size: 0.875rem;
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
-	color: var(--color-white);
-	background-color: var(--color-primary);
+	color: #ffffff;
+	background-color: #387922;
 }
 
 .numbers-table tbody tr:nth-child(odd) {
@@ -142,7 +142,7 @@
 }
 
 .founded {
-	padding: 1rem var(--page-gutter) 7rem 10.3%;
+	padding: 1rem 10.9% 7rem 10.3%;
 }
 
 .founded p {

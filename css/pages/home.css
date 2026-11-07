@@ -20,9 +20,9 @@
 	display: grid;
 	grid-template-columns: minmax(0, 63rem);
 	row-gap: 1.5rem;
-	padding: 0 var(--page-gutter) 1.5rem;
-	color: var(--color-white);
-	background-color: var(--color-primary);
+	padding: 0 10.9% 1.5rem;
+	color: #ffffff;
+	background-color: #387922;
 }
 
 .home-intro article {
@@ -36,8 +36,8 @@
 
 .home-intro .section-title,
 .home-intro .section-title .number {
-	color: var(--color-white);
-	border-bottom-color: var(--color-white);
+	color: #ffffff;
+	border-bottom-color: #ffffff;
 }
 
 .home-photo img {
@@ -51,7 +51,7 @@
 	justify-content: space-between;
 	align-items: center;
 	column-gap: 2rem;
-	padding: 3rem 2.875rem 2.5rem var(--page-gutter);
+	padding: 3rem 2.875rem 2.5rem 10.9%;
 }
 
 .home-everyday article {

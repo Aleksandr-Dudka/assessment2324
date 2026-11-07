@@ -1,5 +1,5 @@
 .former-hero {
-	margin-top: calc(-1 * var(--header-height));
+	margin-top: -8.1875rem;
 }
 
 .former-hero img {

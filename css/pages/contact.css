@@ -6,7 +6,7 @@
 		".     text";
 	margin: 0 3.5%;
 	padding-bottom: 4rem;
-	border-bottom: 1px solid var(--color-ink);
+	border-bottom: 1px solid #1a1a1a;
 }
 
 .contact-intro h1 {
@@ -93,9 +93,9 @@
 .contact-form textarea {
 	width: 100%;
 	padding: 0.75rem;
-	font-family: var(--font-body);
+	font-family: "Manrope", Arial, sans-serif;
 	font-size: 1rem;
-	color: var(--color-ink);
+	color: #1a1a1a;
 	background-color: #f3f3f3;
 	border-width: 1px;
 	border-style: solid;
@@ -106,7 +106,7 @@
 .contact-form input:focus,
 .contact-form select:focus,
 .contact-form textarea:focus {
-	border-color: var(--color-primary);
+	border-color: #387922;
 	outline: 2px solid rgba(56, 121, 34, 0.3);
 }
 
@@ -117,25 +117,25 @@
 
 .contact-form input[type="submit"] {
 	padding: 0.75rem 1rem;
-	font-family: var(--font-heading);
+	font-family: "Space Grotesk", Arial, sans-serif;
 	font-size: 1.5rem;
 	text-align: left;
-	color: var(--color-white);
-	background-color: var(--color-primary);
+	color: #ffffff;
+	background-color: #387922;
 	background-image: url("../../img/arrow.svg");
 	background-position: right 1rem center;
 	background-repeat: no-repeat;
-	border-color: var(--color-primary);
+	border-color: #387922;
 	border-radius: 0.5rem;
 	cursor: pointer;
 }
 
 .contact-form input[type="submit"]:hover {
-	background-color: var(--color-primary-hover);
+	background-color: #2a5c19;
 }
 
 .contact-form input[type="submit"]:active {
-	background-color: var(--color-primary-active);
+	background-color: #1d4211;
 }
 
 @media screen and (max-width: 768px) {

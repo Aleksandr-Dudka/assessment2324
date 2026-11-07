@@ -15,9 +15,9 @@
 	width: 40rem;
 	max-width: 95%;
 	padding: 1rem 1.25rem;
-	color: var(--color-white);
+	color: #ffffff;
 	background-color: rgba(26, 26, 26, 0.95);
-	border-radius: var(--radius-md);
+	border-radius: 0.75rem;
 }
 
 .cookie p {
@@ -27,14 +27,14 @@
 
 .cookie label {
 	padding: 0.5rem 1.25rem;
-	font-family: var(--font-heading);
-	background-color: var(--color-primary);
+	font-family: "Space Grotesk", Arial, sans-serif;
+	background-color: #387922;
 	border-radius: 0.5rem;
 	cursor: pointer;
 }
 
 .cookie label:hover {
-	background-color: var(--color-primary-hover);
+	background-color: #2a5c19;
 }
 
 .cookie-toggle:checked + .cookie {

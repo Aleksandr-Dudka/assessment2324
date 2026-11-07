@@ -1,13 +1,13 @@
 a {
-	color: var(--color-primary);
+	color: #387922;
 }
 
 a:visited {
-	color: var(--color-primary-hover);
+	color: #2a5c19;
 }
 
 a:hover {
-	color: var(--color-ink);
+	color: #1a1a1a;
 }
 
 a:active {
@@ -19,26 +19,26 @@ a:active {
 	display: inline-block;
 	padding: 0.625rem 1.25rem;
 	min-width: 13.375rem;
-	font-family: var(--font-heading);
+	font-family: "Space Grotesk", Arial, sans-serif;
 	font-size: 1.5rem;
 	line-height: 1.5;
 	letter-spacing: -0.016em;
 	text-align: center;
 	text-decoration: none;
-	color: var(--color-white);
-	background-color: var(--color-primary);
-	border-radius: var(--radius-md);
+	color: #ffffff;
+	background-color: #387922;
+	border-radius: 0.75rem;
 	transition: background-color 0.3s;
 }
 
 .button:hover {
-	color: var(--color-white);
-	background-color: var(--color-primary-hover);
+	color: #ffffff;
+	background-color: #2a5c19;
 }
 
 .button:active {
-	color: var(--color-white);
-	background-color: var(--color-primary-active);
+	color: #ffffff;
+	background-color: #1d4211;
 }
 
 @media screen and (max-width: 768px) {
