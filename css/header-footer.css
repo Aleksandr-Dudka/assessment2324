@@ -1,0 +1,271 @@
+.site-header {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-template-areas: "logo nav";
+	align-items: center;
+	gap: 1.5rem;
+	height: var(--header-height);
+	padding: 2rem;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-bottom-left-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+}
+
+.site-header.dark {
+	background-color: rgba(59, 59, 59, 0.8);
+}
+
+.logo {
+	grid-area: logo;
+}
+
+.logo img {
+	width: 13.75rem;
+}
+
+.site-header nav {
+	grid-area: nav;
+}
+
+.menu-toggle {
+	position: absolute;
+	opacity: 0;
+}
+
+.menu-button {
+	display: none;
+}
+
+.site-header nav > ul {
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: end;
+	gap: 0.5rem;
+}
+
+.site-header nav a {
+	position: relative;
+	display: block;
+	padding: 0.5rem 0.5rem 0.875rem;
+	font-size: 1.25rem;
+	line-height: 1;
+	color: #000000;
+	text-decoration: none;
+}
+
+.site-header.dark nav a {
+	color: var(--color-white);
+}
+
+.site-header nav a::after {
+	content: "";
+	position: absolute;
+	left: 0.5rem;
+	bottom: 0;
+	width: 0;
+	height: 2px;
+	background-color: var(--color-primary);
+	transition: width 0.3s;
+}
+
+.site-header nav a:hover::after,
+.site-header nav a.active::after {
+	width: calc(100% - 1rem);
+}
+
+.site-header nav a:active {
+	color: var(--color-primary);
+}
+
+.site-footer {
+	display: grid;
+	grid-template-columns: 2.1fr 2fr 1.45fr 1.5fr;
+	grid-template-areas:
+		"logo photos sources social"
+		"copy copy   copy    copy";
+	gap: 2rem;
+	padding: 1.75rem var(--page-gutter) 2.5rem 11%;
+	border-top: 2px solid var(--color-primary);
+}
+
+.footer-logo {
+	grid-area: logo;
+}
+
+.footer-logo img {
+	width: 13.75rem;
+}
+
+.footer-photos {
+	grid-area: photos;
+}
+
+.footer-sources {
+	grid-area: sources;
+}
+
+.footer-social {
+	grid-area: social;
+}
+
+.site-footer section {
+	padding-top: 1.5rem;
+}
+
+.site-footer h2 {
+	margin-bottom: 1.25rem;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.4;
+}
+
+.site-footer a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.site-footer a:hover {
+	color: var(--color-primary);
+	text-decoration: underline;
+}
+
+.social {
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: start;
+	gap: 0.8rem;
+}
+
+.social a {
+	display: grid;
+	place-items: center;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+.copyright {
+	grid-area: copy;
+	margin: 4rem 0 0;
+	font-size: 0.875rem;
+}
+
+@media screen and (min-width: 769px) {
+	.site-header nav > ul {
+		display: grid;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.site-header,
+	.site-header.dark {
+		height: 4.5rem;
+		padding: 0.75rem 1.25rem;
+		background-color: var(--color-white);
+		border-radius: 0;
+		box-shadow: 0 1px 0 #e2e2e2;
+	}
+
+	.site-header.dark nav a {
+		color: #000000;
+	}
+
+	.site-header nav {
+		justify-self: end;
+	}
+
+	.logo img {
+		width: 7.5rem;
+	}
+
+	.menu-button {
+		display: block;
+		font-size: 1.75rem;
+		line-height: 1;
+		cursor: pointer;
+	}
+
+	.site-header nav > ul {
+		position: absolute;
+		top: 4.5rem;
+		left: 0;
+		right: 0;
+		display: none;
+		grid-auto-flow: row;
+		justify-content: stretch;
+		padding: 0.5rem 1.25rem 1rem;
+		background-color: var(--color-white);
+		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+	}
+
+	.menu-toggle:checked ~ ul {
+		display: grid;
+	}
+
+	.site-header nav a {
+		font-size: 1.125rem;
+	}
+
+	.site-footer {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			"logo   social"
+			"photos sources"
+			"copy   copy";
+		gap: 1.5rem;
+		padding: 2rem 1.25rem;
+	}
+
+	.footer-logo img {
+		width: 9rem;
+	}
+
+	.site-footer section {
+		padding-top: 0;
+	}
+
+	.footer-social {
+		justify-self: end;
+	}
+
+	.footer-social h2 {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip: rect(0 0 0 0);
+	}
+
+	.copyright {
+		margin-top: 0;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+	.site-header {
+		padding: 1.5rem;
+	}
+
+	.logo img {
+		width: 10rem;
+	}
+
+	.site-header nav > ul {
+		gap: 0;
+	}
+
+	.site-header nav a {
+		font-size: 1rem;
+	}
+
+	.site-footer {
+		padding-left: 6%;
+		padding-right: 6%;
+	}
+
+	.footer-logo img {
+		width: 10rem;
+	}
+}
