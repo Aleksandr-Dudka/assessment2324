@@ -1,0 +1,197 @@
+.numbers-hero {
+	min-height: 31rem;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../img/numbers-hero.jpg");
+}
+
+.numbers-hero p {
+	max-width: 44rem;
+	margin-top: 1.25rem;
+	font-size: 1.25rem;
+}
+
+.numbers-stats {
+	background-color: var(--color-primary);
+}
+
+.numbers-stats .stats {
+	grid-template-columns: repeat(6, 1fr);
+	margin: 0;
+}
+
+.compare {
+	display: grid;
+	grid-template-columns: minmax(0, 35rem) 38.75rem;
+	grid-template-areas: "text chart";
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 2rem;
+	padding: 4.5rem 4% 3rem var(--page-gutter);
+}
+
+.compare article {
+	grid-area: text;
+}
+
+.compare h3,
+.numbers-table h2 {
+	margin-bottom: 1rem;
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.compare p {
+	font-size: 1.25rem;
+}
+
+.area-chart {
+	grid-area: chart;
+}
+
+.area-chart img {
+	width: 100%;
+}
+
+.students {
+	display: grid;
+	grid-template-columns: minmax(0, 37.75rem);
+	align-content: center;
+	min-height: 50.75rem;
+	padding: 5rem var(--page-gutter);
+	color: #f5f2e8;
+	background-color: var(--color-primary);
+	background-image: linear-gradient(to right, rgba(56, 121, 34, 0.98), rgba(56, 121, 34, 0.85) 34%, rgba(56, 121, 34, 0)), url("../../img/students-night.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.students p {
+	font-size: 1.75rem;
+}
+
+.metro {
+	display: grid;
+	grid-template-columns: minmax(0, 36.5rem) 23.2rem;
+	grid-template-areas: "text map";
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 2rem;
+	padding: 5rem 10% 2rem 11%;
+}
+
+.metro p {
+	grid-area: text;
+	font-size: 1.25rem;
+}
+
+.metro figure {
+	grid-area: map;
+}
+
+.metro img {
+	width: 100%;
+	border-radius: var(--radius-md);
+}
+
+.numbers-table {
+	padding: 3rem var(--page-gutter);
+}
+
+.numbers-table table {
+	width: 100%;
+	max-width: 54rem;
+	border-collapse: collapse;
+	font-size: 1.125rem;
+}
+
+.numbers-table caption {
+	padding-bottom: 0.75rem;
+	text-align: left;
+	color: #62736c;
+}
+
+.numbers-table th,
+.numbers-table td {
+	padding: 0.75rem 1rem;
+	text-align: left;
+	border: 1px solid #c8d3c0;
+}
+
+.numbers-table thead th {
+	font-size: 0.875rem;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: var(--color-white);
+	background-color: var(--color-primary);
+}
+
+.numbers-table tbody tr:nth-child(odd) {
+	background-color: #FFF;
+}
+
+.numbers-table tbody tr:nth-child(even) {
+	background-color: #CFF;
+}
+
+.founded {
+	padding: 1rem var(--page-gutter) 7rem 10.3%;
+}
+
+.founded p {
+	max-width: 70.8rem;
+	font-size: 1.25rem;
+}
+
+@media screen and (max-width: 768px) {
+	.numbers-stats .stats {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.compare {
+		grid-template-areas:
+			"text"
+			"chart";
+	}
+
+	.metro {
+		grid-template-areas:
+			"text"
+			"map";
+	}
+
+	.students {
+		min-height: 0;
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+		background-image: linear-gradient(rgba(56, 121, 34, 0.9), rgba(56, 121, 34, 0.7)), url("../../img/students-night.jpg");
+	}
+
+	.students p {
+		font-size: 1.125rem;
+	}
+
+	.numbers-table table {
+		font-size: 0.9rem;
+	}
+
+	.numbers-table th,
+	.numbers-table td {
+		padding: 0.5rem;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+	.numbers-stats .stats {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.compare {
+		grid-template-columns: minmax(0, 1fr) 22rem;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.metro figure {
+		width: 70%;
+	}
+}
