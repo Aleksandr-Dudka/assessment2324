@@ -104,9 +104,12 @@
 	font-size: 1.125rem;
 }
 
+/* text-indent moves the caption text in by 1rem,
+	so it starts on the same line as the text in the table cells */
 .numbers-table caption {
 	padding-bottom: 0.75rem;
 	text-align: left;
+	text-indent: 1rem;
 	color: #62736c;
 }
 
@@ -282,5 +285,11 @@
 		grid-template-columns: minmax(0, 1fr) 16rem;
 		padding-left: 6%;
 		padding-right: 6%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.numbers-table caption {
+		text-indent: 0.5rem;
 	}
 }
