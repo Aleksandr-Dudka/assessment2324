@@ -1,0 +1,104 @@
+.home-hero {
+	min-height: 45.375rem;
+	padding-top: 20rem;
+	background-image: url("../../img/home-hero.jpg");
+}
+
+.home-hero p {
+	max-width: 43.75rem;
+	margin: 1rem 0 1.25rem;
+	font-size: 1.5rem;
+	line-height: 1.2;
+	word-spacing: 0.05em;
+}
+
+.home-hero .button {
+	justify-self: start;
+}
+
+.home-intro {
+	display: grid;
+	grid-template-columns: minmax(0, 63rem);
+	row-gap: 1.5rem;
+	padding: 0 var(--page-gutter) 1.5rem;
+	color: var(--color-white);
+	background-color: var(--color-primary);
+}
+
+.home-intro article {
+	display: grid;
+	max-width: 54.375rem;
+}
+
+.home-intro p {
+	font-size: 1.25rem;
+}
+
+.home-intro .section-title,
+.home-intro .section-title .number {
+	color: var(--color-white);
+	border-bottom-color: var(--color-white);
+}
+
+.home-photo img {
+	height: 31.3rem;
+}
+
+.home-everyday {
+	display: grid;
+	grid-template-columns: minmax(0, 54.25rem) 18.9rem;
+	grid-template-areas: "text photo";
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 2rem;
+	padding: 3rem 2.875rem 2.5rem var(--page-gutter);
+}
+
+.home-everyday article {
+	display: grid;
+	grid-area: text;
+}
+
+.home-everyday .button {
+	justify-self: start;
+}
+
+.home-everyday p {
+	font-size: 1.25rem;
+}
+
+.home-everyday .photo {
+	grid-area: photo;
+}
+
+.home-everyday .photo img {
+	height: 20.7rem;
+}
+
+@media screen and (max-width: 768px) {
+	.home-photo img {
+		height: 14rem;
+	}
+
+	.home-everyday {
+		grid-template-areas:
+			"text"
+			"photo";
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+	.home-everyday .photo img {
+		height: 17.5rem;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.home-everyday .photo {
+		width: 60%;
+	}
+
+	.home-everyday .photo img {
+		height: 20rem;
+	}
+}
