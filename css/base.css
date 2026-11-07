@@ -1,0 +1,78 @@
+:root {
+	--color-primary: #387922;
+	--color-primary-hover: #2a5c19;
+	--color-primary-active: #1d4211;
+	--color-primary-overlay: rgba(56, 121, 34, 0.74);
+	--color-ink: #1a1a1a;
+	--color-white: #ffffff;
+
+	--font-heading: "Space Grotesk", Arial, sans-serif;
+	--font-body: "Manrope", Arial, sans-serif;
+
+	--radius-md: 0.75rem;
+	--header-height: 8.1875rem;
+	--page-gutter: 10.9%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-family: var(--font-body);
+	font-size: 1rem;
+	line-height: 1.4;
+	color: var(--color-ink);
+	background-color: var(--color-white);
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+	font-family: var(--font-heading);
+	font-weight: 500;
+	line-height: 1.1;
+}
+
+p {
+	margin: 0 0 1em;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+figure {
+	margin: 0;
+}
+
+.accent {
+	color: var(--color-primary);
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		font-size: 0.9375rem;
+	}
+}
