@@ -102,3 +102,59 @@
 		height: 20rem;
 	}
 }
+
+
+/* rules for this page from the shared media queries: they are here,
+	after the normal rules of the page, so they are not overridden */
+@media screen and (max-width: 768px) {
+	.home-hero p {
+		font-size: 1rem;
+	}
+
+	.home-intro p {
+		font-size: 1rem;
+	}
+
+	.home-everyday p {
+		font-size: 1rem;
+	}
+
+	.home-intro {
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+	}
+
+	.home-hero {
+		min-height: 0;
+		padding-top: 4.5rem;
+	}
+
+	.home-everyday {
+		grid-template-columns: 1fr;
+		row-gap: 1.5rem;
+		padding: 2rem 1.25rem;
+	}
+}
+
+/* rules for this page from the shared media queries: they are here,
+	after the normal rules of the page, so they are not overridden */
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+	.home-intro {
+		padding-left: 6%;
+		padding-right: 6%;
+	}
+
+	.home-everyday {
+		grid-template-columns: minmax(0, 1fr) 16rem;
+		padding-left: 6%;
+		padding-right: 6%;
+	}
+}
+
+/* rules for this page from the shared media queries: they are here,
+	after the normal rules of the page, so they are not overridden */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.home-photo img {
+		height: 22rem;
+	}
+}

@@ -150,3 +150,50 @@
 		height: 18rem;
 	}
 }
+
+
+/* rules for this page from the shared media queries: they are here,
+	after the normal rules of the page, so they are not overridden */
+@media screen and (max-width: 768px) {
+	.page-intro h1 {
+		font-size: 2.25rem;
+	}
+
+	.page-intro p {
+		font-size: 1rem;
+	}
+
+	.sight-content p {
+		font-size: 1rem;
+	}
+
+	.sight-content p.small {
+		font-size: 1rem;
+	}
+
+	.page-intro {
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+	}
+}
+
+/* rules for this page from the shared media queries: they are here,
+	after the normal rules of the page, so they are not overridden */
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+	.page-intro {
+		padding-left: 6%;
+		padding-right: 6%;
+	}
+
+	.page-intro h1 {
+		font-size: 3rem;
+	}
+}
+
+/* rules for this page from the shared media queries: they are here,
+	after the normal rules of the page, so they are not overridden */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.page-intro h1 {
+		font-size: 3rem;
+	}
+}

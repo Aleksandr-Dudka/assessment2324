@@ -200,3 +200,87 @@
 		width: 70%;
 	}
 }
+
+
+/* rules for this page from the shared media queries: they are here,
+	after the normal rules of the page, so they are not overridden */
+@media screen and (max-width: 768px) {
+	.numbers-hero p {
+		font-size: 1rem;
+	}
+
+	.compare p {
+		font-size: 1rem;
+	}
+
+	.metro p {
+		font-size: 1rem;
+	}
+
+	.founded p {
+		font-size: 1rem;
+	}
+
+	.numbers-table {
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+	}
+
+	.founded {
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+	}
+
+	.students {
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+	}
+
+	.numbers-hero {
+		min-height: 0;
+		padding-top: 4.5rem;
+	}
+
+	.compare {
+		grid-template-columns: 1fr;
+		row-gap: 1.5rem;
+		padding: 2rem 1.25rem;
+	}
+
+	.metro {
+		grid-template-columns: 1fr;
+		row-gap: 1.5rem;
+		padding: 2rem 1.25rem;
+	}
+}
+
+/* rules for this page from the shared media queries: they are here,
+	after the normal rules of the page, so they are not overridden */
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+	.students {
+		padding-left: 6%;
+		padding-right: 6%;
+	}
+
+	.numbers-table {
+		padding-left: 6%;
+		padding-right: 6%;
+	}
+
+	.founded {
+		padding-left: 6%;
+		padding-right: 6%;
+	}
+
+	.compare {
+		grid-template-columns: minmax(0, 1fr) 16rem;
+		padding-left: 6%;
+		padding-right: 6%;
+	}
+
+	.metro {
+		grid-template-columns: minmax(0, 1fr) 16rem;
+		padding-left: 6%;
+		padding-right: 6%;
+	}
+}

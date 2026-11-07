@@ -163,3 +163,33 @@
 		font-size: 1rem;
 	}
 }
+
+
+/* rules for this page from the shared media queries: they are here,
+	after the normal rules of the page, so they are not overridden */
+@media screen and (max-width: 768px) {
+	.why .lead {
+		font-size: 1rem;
+	}
+
+	.why article p {
+		font-size: 1rem;
+	}
+
+	.why {
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+	}
+
+	.former-hero {
+		margin-top: 0;
+	}
+}
+
+/* rules for this page from the shared media queries: they are here,
+	after the normal rules of the page, so they are not overridden */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.former-hero img {
+		height: 22rem;
+	}
+}

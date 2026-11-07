@@ -192,3 +192,22 @@
 		font-size: 1.25rem;
 	}
 }
+
+
+/* rules for this page from the shared media queries: they are here,
+	after the normal rules of the page, so they are not overridden */
+@media screen and (max-width: 768px) {
+	.contact-intro p {
+		font-size: 1rem;
+	}
+
+	.contact-main article p {
+		font-size: 1rem;
+	}
+
+	.contact-main {
+		grid-template-columns: 1fr;
+		row-gap: 1.5rem;
+		padding: 2rem 1.25rem;
+	}
+}

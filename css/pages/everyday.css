@@ -267,3 +267,39 @@
 		height: 10rem;
 	}
 }
+
+
+/* rules for this page from the shared media queries: they are here,
+	after the normal rules of the page, so they are not overridden */
+@media screen and (max-width: 768px) {
+	.everyday-intro p {
+		font-size: 1rem;
+	}
+
+	.story p {
+		font-size: 1rem;
+	}
+
+	.everyday-intro {
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+	}
+
+	.story {
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+	}
+
+	.gallery {
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+	}
+}
+
+/* rules for this page from the shared media queries: they are here,
+	after the normal rules of the page, so they are not overridden */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.everyday-wide img {
+		height: 22rem;
+	}
+}
