@@ -1,0 +1,174 @@
+.former-hero {
+	margin-top: calc(-1 * var(--header-height));
+}
+
+.former-hero img {
+	width: 100%;
+	height: 33rem;
+	object-fit: cover;
+}
+
+.why {
+	display: grid;
+	grid-template-columns: 19rem 1fr 1fr;
+	grid-template-areas:
+		"why     lead    lead"
+		"kharkiv kharkiv photo"
+		"text1   like    like"
+		"text1   text2   text3";
+	column-gap: 2rem;
+	padding: 1.5rem 6.7% 5rem;
+}
+
+.why h1 {
+	display: contents;
+}
+
+.why h1 span {
+	font-size: 11.7rem;
+	font-weight: 500;
+	line-height: 1.05;
+	letter-spacing: -0.02em;
+	white-space: nowrap;
+}
+
+.why-1 {
+	grid-area: why;
+}
+
+.why-2 {
+	grid-area: kharkiv;
+}
+
+.why-3 {
+	grid-area: photo;
+	justify-self: end;
+}
+
+.why-4 {
+	grid-area: like;
+}
+
+.why .lead {
+	grid-area: lead;
+	max-width: 24rem;
+	margin: 0 0 0 10rem;
+	font-size: 1.25rem;
+}
+
+.why .lead::first-letter {
+	float: left;
+	margin: 0.1em 0.12em 0 0;
+	font-family: var(--font-heading);
+	font-size: 3.4em;
+	line-height: 0.8;
+	color: var(--color-primary);
+}
+
+.why .photo {
+	grid-area: photo;
+	align-self: center;
+	width: 13.9rem;
+	margin-left: 2rem;
+}
+
+.why .photo img {
+	height: 14.4rem;
+}
+
+.why article:nth-of-type(1) {
+	grid-area: text1;
+}
+
+.why article:nth-of-type(2) {
+	grid-area: text2;
+}
+
+.why article:nth-of-type(3) {
+	grid-area: text3;
+}
+
+.why article p {
+	font-size: 1.25rem;
+}
+
+.why article p + p {
+	text-indent: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+	.former-hero img {
+		height: 15rem;
+	}
+
+	.why {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"title"
+			"lead"
+			"photo"
+			"text1"
+			"text2"
+			"text3";
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+
+	.why h1 {
+		display: block;
+		grid-area: title;
+		margin-bottom: 1.5rem;
+	}
+
+	.why h1 span {
+		font-size: 4rem;
+		white-space: normal;
+	}
+
+	.why .lead {
+		margin: 0 0 1.5rem;
+	}
+
+	.why .photo {
+		width: 100%;
+		margin: 0 0 1.5rem;
+	}
+
+	.why .photo img {
+		height: 15rem;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+	.why {
+		grid-template-columns: 13rem 1fr 1fr;
+		padding-left: 6%;
+		padding-right: 6%;
+	}
+
+	.why h1 span {
+		font-size: 6.5rem;
+	}
+
+	.why .lead {
+		margin-left: 2rem;
+		font-size: 1rem;
+	}
+
+	.why .photo {
+		width: 9rem;
+		margin-left: 0.5rem;
+	}
+
+	.why .photo img {
+		height: 9.5rem;
+	}
+
+	.why .photo figcaption {
+		font-size: 0.875rem;
+	}
+
+	.why article p {
+		font-size: 1rem;
+	}
+}
