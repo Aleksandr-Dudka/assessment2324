@@ -1,0 +1,269 @@
+.everyday-intro {
+	display: grid;
+	grid-template-columns: 1fr minmax(0, 48rem);
+	grid-template-areas:
+		"title title"
+		".     text";
+	padding: 0 3.5% 3.5rem;
+}
+
+.everyday-intro h1 {
+	grid-area: title;
+	font-size: 13.8rem;
+	line-height: 0.95;
+	letter-spacing: -0.02em;
+}
+
+.everyday-intro p {
+	grid-area: text;
+	font-size: 1.25rem;
+}
+
+.everyday-wide {
+	margin: 0 3.5%;
+}
+
+.everyday-wide img {
+	height: 38rem;
+	border-radius: var(--radius-md);
+}
+
+.story {
+	padding: 2.5rem 3.5%;
+	border-bottom: 1px solid #b5b5b5;
+}
+
+.story:last-of-type {
+	border-bottom: none;
+}
+
+.story::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.story .story-number {
+	float: left;
+	width: 17.5rem;
+	font-size: 8.4rem;
+	line-height: 1;
+	color: var(--color-primary);
+}
+
+.story .photo {
+	float: right;
+	width: 14.4rem;
+	margin: 0 0 1rem 2rem;
+}
+
+.story .photo img {
+	height: 16.75rem;
+	border-radius: var(--radius-md);
+}
+
+.story p {
+	max-width: 48rem;
+	margin-left: 17.5rem;
+	font-size: 1.25rem;
+}
+
+.story.reverse .story-number {
+	float: right;
+	width: auto;
+	text-align: right;
+}
+
+.story.reverse .photo {
+	float: left;
+	width: 21.9rem;
+	margin: 0 2rem 1rem 0;
+}
+
+.story.reverse .photo img {
+	height: 24rem;
+}
+
+.story.reverse p {
+	margin-left: 28rem;
+}
+
+.story.reverse p:first-of-type {
+	margin-top: 8.6rem;
+}
+
+.gallery {
+	padding: 3rem 3.5% 6rem;
+}
+
+.gallery ul {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: 1.25rem;
+}
+
+.gallery li {
+	grid-column: span 3;
+}
+
+.gallery li.wide {
+	grid-column: span 4;
+}
+
+.gallery li.small {
+	grid-column: span 2;
+}
+
+.gallery li.large {
+	grid-column: span 5;
+}
+
+.gallery img {
+	width: 100%;
+	height: 12.75rem;
+	object-fit: cover;
+	border-radius: var(--radius-md);
+	transition: transform 0.3s;
+}
+
+.gallery img:hover {
+	transform: scale(1.03);
+}
+
+@media screen and (max-width: 768px) {
+	.everyday-intro {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"title"
+			"text";
+	}
+
+	.everyday-intro h1 {
+		margin-bottom: 1rem;
+		font-size: 4.5rem;
+	}
+
+	.everyday-wide {
+		margin: 0 1.25rem;
+	}
+
+	.everyday-wide img {
+		height: 15rem;
+	}
+
+	.story .story-number,
+	.story.reverse .story-number {
+		float: none;
+		width: auto;
+		margin-bottom: 1rem;
+		font-size: 4rem;
+		text-align: left;
+	}
+
+	.story .photo,
+	.story.reverse .photo {
+		float: right;
+		width: 40%;
+		margin: 0 0 0.75rem 1rem;
+	}
+
+	.story .photo img,
+	.story.reverse .photo img {
+		height: 10rem;
+	}
+
+	.story p,
+	.story.reverse p,
+	.story.reverse p:first-of-type {
+		margin-left: 0;
+		margin-top: 0;
+	}
+
+	.gallery ul {
+		grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+		gap: 0.75rem;
+	}
+
+	.gallery li,
+	.gallery li.wide,
+	.gallery li.small,
+	.gallery li.large {
+		grid-column: auto;
+	}
+
+	.gallery li:last-child {
+		grid-column: 1 / -1;
+	}
+
+	.gallery img {
+		height: 8rem;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+	.everyday-intro h1 {
+		font-size: 8rem;
+	}
+
+	.everyday-wide img {
+		height: 26rem;
+	}
+
+	.story .story-number {
+		width: 9rem;
+		font-size: 5rem;
+	}
+
+	.story p {
+		margin-left: 9rem;
+		font-size: 1.125rem;
+	}
+
+	.story .photo {
+		width: 12rem;
+	}
+
+	.story .photo img {
+		height: 14rem;
+	}
+
+	.story.reverse .photo {
+		width: 15rem;
+	}
+
+	.story.reverse .photo img {
+		height: 17rem;
+	}
+
+	.story.reverse p {
+		margin-left: 17rem;
+	}
+
+	.story.reverse p:first-of-type {
+		margin-top: 5.5rem;
+	}
+
+	.gallery ul {
+		gap: 0.75rem;
+	}
+
+	.gallery img {
+		height: 9rem;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.story .photo,
+	.story.reverse .photo {
+		width: 35%;
+	}
+
+	.story .photo img,
+	.story.reverse .photo img {
+		height: 14rem;
+	}
+
+	.gallery img {
+		height: 10rem;
+	}
+}
