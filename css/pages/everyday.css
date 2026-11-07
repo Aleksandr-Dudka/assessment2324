@@ -303,3 +303,40 @@
 		height: 22rem;
 	}
 }
+
+/* photos keep their own proportions on smaller screens, so they are not cut */
+@media screen and (max-width: 1199px) {
+	.everyday-wide img {
+		height: auto;
+		min-height: 12rem;
+	}
+}
+
+/* gallery on smartphones: wide photos take the whole row and keep their
+	proportions; grid-auto-flow: dense fills the empty cells with the next photos */
+@media screen and (max-width: 768px) {
+	.gallery ul {
+		grid-auto-flow: dense;
+	}
+
+	.gallery li.wide,
+	.gallery li.large {
+		grid-column: 1 / -1;
+	}
+
+	.gallery li.wide img,
+	.gallery li.large img {
+		height: auto;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.gallery li img {
+		height: 8.5rem;
+	}
+
+	.gallery li.wide img,
+	.gallery li.large img {
+		height: auto;
+	}
+}

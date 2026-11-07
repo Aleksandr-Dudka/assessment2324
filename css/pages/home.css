@@ -158,3 +158,11 @@
 		height: 22rem;
 	}
 }
+
+/* photos keep their own proportions on smaller screens, so they are not cut */
+@media screen and (max-width: 1199px) {
+	.home-photo img {
+		height: auto;
+		min-height: 12rem;
+	}
+}

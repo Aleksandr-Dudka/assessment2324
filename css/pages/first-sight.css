@@ -197,3 +197,14 @@
 		font-size: 3rem;
 	}
 }
+
+/* photos keep their own proportions on smartphones, so they are not cut */
+@media screen and (max-width: 768px) {
+	.sight-content figure {
+		max-width: 25rem;
+	}
+
+	.sight-content img {
+		height: auto;
+	}
+}

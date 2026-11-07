@@ -193,3 +193,21 @@
 		height: 22rem;
 	}
 }
+
+/* photos keep their own proportions on smaller screens, so they are not cut */
+@media screen and (max-width: 1199px) {
+	.former-hero img {
+		height: auto;
+		min-height: 12rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.why .photo {
+		max-width: 22rem;
+	}
+
+	.why .photo img {
+		height: auto;
+	}
+}
