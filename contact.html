@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="author" content="Oleksandr Dudka" />
+	<meta name="description" content="Ask me a question about Kharkiv: places, studying there, everyday life or food. I lived in Kharkiv and will answer from my own experience." />
+	<meta name="keywords" content="Kharkiv contact, ask a question, Kharkiv advice, studying in Kharkiv, Oleksandr Dudka" />
+	<title>Still Have a Question? - Contact</title>
+	<link rel="icon" type="image/png" href="img/favicon.png" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap" />
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/buttons-links.css" />
+	<link rel="stylesheet" type="text/css" href="css/header-footer.css" />
+	<link rel="stylesheet" type="text/css" href="css/shared-blocks.css" />
+	<link rel="stylesheet" type="text/css" href="css/cookie-banner.css" />
+	<link rel="stylesheet" type="text/css" href="css/pages/contact.css" />
+</head>
+<body>
+	<header class="site-header">
+		<a class="logo" href="index.html">
+			<picture>
+				<source media="(max-width: 768px)" srcset="img/logo.png" />
+				<img src="img/logo.png" alt="Kharkiv logo" title="Kharkiv - back to the home page" width="220" height="65" />
+			</picture>
+		</a>
+		<nav>
+			<input type="checkbox" id="menu-toggle" class="menu-toggle" />
+			<label for="menu-toggle" class="menu-button" title="Open the menu">&#9776;</label>
+			<ul>
+				<li><a href="first-sight.html">First Sight</a></li>
+				<li><a href="kharkiv-in-numbers.html">Kharkiv in Numbers</a></li>
+				<li><a href="former-kharkiv.html">Former Kharkiv</a></li>
+				<li><a href="everyday-kharkiv.html">Everyday Kharkiv</a></li>
+				<li><a href="contact.html" class="active">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section class="contact-intro">
+			<h1>Still have a question?</h1>
+			<p>If you still have a question about Kharkiv, you can ask me here. You are not writing to a city portal or an automated system &mdash; I lived in Kharkiv, so I will answer from my own experience and try to help with things that are difficult to find in a travel guide or on Wikipedia.</p>
+		</section>
+
+		<section class="contact-main">
+			<h2 class="visually-hidden">Ask your question</h2>
+			<article>
+				<h3 class="visually-hidden">What you can ask</h3>
+				<p>You can ask me about places in Kharkiv, studying there, everyday life, food or other things I can answer from my own experience.</p>
+				<p>I probably <em>cannot</em> help with visas, current ticket prices, schedules or what is happening in the city right now, because this information can change quickly.</p>
+				<p>After you send your message, I will read it and try to reply within one week. If I do not know the answer, I will tell you directly instead of guessing.</p>
+			</article>
+
+			<form class="contact-form" action="#" method="post">
+				<fieldset>
+					<legend>Fields marked with <span class="required">*</span> are required.</legend>
+					<p>
+						<label for="title">Mr/Ms<span class="required">*</span></label>
+						<select id="title" name="title" required>
+							<option value="">Select</option>
+							<option value="mr">Mr</option>
+							<option value="ms">Ms</option>
+						</select>
+					</p>
+					<p class="field-name">
+						<label for="name">Name and Surname<span class="required">*</span></label>
+						<input type="text" id="name" name="name" placeholder="Your name" required />
+					</p>
+					<p class="field-email">
+						<label for="email">Email<span class="required">*</span></label>
+						<input type="email" id="email" name="email" placeholder="you@example.com" required />
+					</p>
+					<p class="field-phone">
+						<label for="phone">Phone</label>
+						<input type="tel" id="phone" name="phone" placeholder="+31" />
+					</p>
+					<p class="field-question">
+						<label for="question">Your question<span class="required">*</span></label>
+						<textarea id="question" name="question" rows="6" cols="40" placeholder="Your question..." required></textarea>
+					</p>
+					<p class="field-submit">
+						<input type="submit" value="Send Your Question" />
+					</p>
+				</fieldset>
+			</form>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<a class="footer-logo" href="index.html"><img src="img/logo.png" alt="Kharkiv logo" title="Kharkiv - back to the home page" width="220" height="65" /></a>
+		<section class="footer-photos">
+			<h2>Photos</h2>
+			<p>Photos by Oleksandr Dudka, Kharkiv, 2018&ndash;2025</p>
+		</section>
+		<section class="footer-sources">
+			<h2>Sources</h2>
+			<ul>
+				<li><a href="https://en.wikipedia.org/wiki/Kharkiv">Wikipedia</a></li>
+			</ul>
+		</section>
+		<section class="footer-social">
+			<h2>Social Media</h2>
+			<ul class="social">
+				<li><a href="https://www.instagram.com/"><img src="img/instagram.png" alt="Instagram" title="Instagram" width="18" height="18" /></a></li>
+				<li><a href="https://www.facebook.com/"><img src="img/facebook.png" alt="Facebook" title="Facebook" width="9" height="16" /></a></li>
+			</ul>
+		</section>
+		<p class="copyright">&copy; 2026 Oleksandr Dudka</p>
+	</footer>
+
+	<input type="checkbox" id="cookie-accept" class="cookie-toggle" />
+	<aside class="cookie">
+		<p>This website uses only <strong>necessary cookies</strong> so that the pages work correctly.</p>
+		<label for="cookie-accept">OK</label>
+	</aside>
+</body>
+</html>
