@@ -1,0 +1,152 @@
+.page-intro {
+	padding: 3.5rem var(--page-gutter) 2.75rem;
+}
+
+.page-intro h1 {
+	margin-bottom: 1rem;
+	font-size: 4rem;
+	letter-spacing: -0.007em;
+}
+
+.page-intro p {
+	max-width: 54.375rem;
+	font-size: 1.25rem;
+}
+
+.sight {
+	border-top: 1px solid var(--color-primary);
+}
+
+.sight:last-child {
+	border-bottom: 1px solid var(--color-primary);
+}
+
+.sight summary {
+	position: relative;
+	display: grid;
+	grid-template-columns: 16.25rem 1fr;
+	align-items: center;
+	min-height: 7.5rem;
+	padding: 1.5rem 4rem 1.5rem 7.8rem;
+	list-style: none;
+	cursor: pointer;
+}
+
+.sight summary::after {
+	content: "\2193";
+	position: absolute;
+	top: 1.5rem;
+	right: 2.5rem;
+	font-size: 1.75rem;
+	transition: transform 0.3s;
+}
+
+.sight details[open] summary::after {
+	transform: rotate(-135deg);
+}
+
+.sight summary:hover .sight-title {
+	text-decoration: underline;
+}
+
+.sight-number {
+	font-family: var(--font-heading);
+	font-size: 2.2rem;
+	color: var(--color-primary);
+}
+
+.sight-title {
+	font-family: var(--font-heading);
+	font-size: 2.2rem;
+	font-weight: 400;
+	line-height: 1.2;
+}
+
+.sight-content {
+	display: grid;
+	grid-template-columns: minmax(0, 29.7rem) 18.75rem;
+	justify-content: space-between;
+	column-gap: 2rem;
+	padding: 0 9.5rem 2.5rem 24rem;
+}
+
+.sight-content p {
+	grid-column: 1;
+	font-size: 1.25rem;
+}
+
+.sight-content p.small {
+	font-size: 1.125rem;
+}
+
+.sight-content figure {
+	grid-column: 2;
+	grid-row: 1 / 4;
+	margin-top: 1.5rem;
+}
+
+.sight-content img {
+	height: 17.8rem;
+	object-fit: cover;
+	border-radius: var(--radius-md);
+}
+
+@media screen and (max-width: 768px) {
+	.sight summary {
+		grid-template-columns: 3.5rem 1fr;
+		min-height: 5rem;
+		padding: 1rem 3rem 1rem 1.25rem;
+	}
+
+	.sight summary::after {
+		top: 1rem;
+		right: 1.25rem;
+	}
+
+	.sight-number,
+	.sight-title {
+		font-size: 1.5rem;
+	}
+
+	.sight-content {
+		grid-template-columns: 1fr;
+		padding: 0 1.25rem 2rem;
+	}
+
+	.sight-content figure {
+		grid-column: 1;
+		grid-row: auto;
+		margin-top: 0;
+	}
+
+	.sight-content img {
+		width: 100%;
+		height: 14rem;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+	.sight summary {
+		grid-template-columns: 6rem 1fr;
+		padding-left: 6%;
+	}
+
+	.sight-content {
+		grid-template-columns: minmax(0, 1fr) 15rem;
+		padding: 0 6% 2.5rem calc(6% + 6rem);
+	}
+
+	.sight-content img {
+		height: 14rem;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.sight-content figure {
+		width: 60%;
+	}
+
+	.sight-content img {
+		height: 18rem;
+	}
+}
