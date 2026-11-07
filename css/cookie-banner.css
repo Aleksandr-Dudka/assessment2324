@@ -1,0 +1,49 @@
+.cookie-toggle {
+	position: absolute;
+	opacity: 0;
+}
+
+.cookie {
+	position: fixed;
+	left: 1rem;
+	bottom: 1rem;
+	z-index: 9999;
+	display: grid;
+	grid-template-columns: 1fr auto;
+	align-items: center;
+	gap: 1rem;
+	width: 40rem;
+	max-width: 95%;
+	padding: 1rem 1.25rem;
+	color: var(--color-white);
+	background-color: rgba(26, 26, 26, 0.95);
+	border-radius: var(--radius-md);
+}
+
+.cookie p {
+	margin: 0;
+	font-size: 0.9rem;
+}
+
+.cookie label {
+	padding: 0.5rem 1.25rem;
+	font-family: var(--font-heading);
+	background-color: var(--color-primary);
+	border-radius: 0.5rem;
+	cursor: pointer;
+}
+
+.cookie label:hover {
+	background-color: var(--color-primary-hover);
+}
+
+.cookie-toggle:checked + .cookie {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+	.cookie {
+		grid-template-columns: 1fr;
+		justify-items: start;
+	}
+}
