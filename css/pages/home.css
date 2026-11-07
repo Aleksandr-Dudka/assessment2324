@@ -166,3 +166,11 @@
 		min-height: 12rem;
 	}
 }
+
+/* on smaller screens the title lies on the bright sky, so a light dark layer
+	is added over the photo to keep the white text readable */
+@media screen and (max-width: 1199px) {
+	.home-hero {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../../img/home-hero.jpg");
+	}
+}

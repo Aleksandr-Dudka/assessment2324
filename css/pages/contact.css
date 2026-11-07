@@ -211,3 +211,14 @@
 		padding: 2rem 1.25rem;
 	}
 }
+
+/* tablet: Mr/Ms gets 2 of the 6 columns so the select is wide enough */
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+	.contact-form fieldset > p:first-of-type {
+		grid-column: span 2;
+	}
+
+	.field-name {
+		grid-column: span 4;
+	}
+}
