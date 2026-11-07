@@ -33,11 +33,11 @@
 	padding: 3rem 3.5% 6rem;
 }
 
-.contact-main article {
+.contact-main > article {
 	grid-area: info;
 }
 
-.contact-main article p {
+.contact-main > article p {
 	font-size: 1.25rem;
 }
 
@@ -201,7 +201,7 @@
 		font-size: 1rem;
 	}
 
-	.contact-main article p {
+	.contact-main > article p {
 		font-size: 1rem;
 	}
 
