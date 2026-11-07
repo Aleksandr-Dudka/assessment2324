@@ -224,43 +224,78 @@
 }
 
 /* message after sending the form. The form sends the visitor to
-	contact.html#thanks, so this section becomes the :target and is shown,
-	and the form right after it (sibling selector +) is hidden */
+	contact.html#thanks, so this section becomes the :target and is shown
+	as a popup in the middle of the screen, over a dark layer */
 .thanks {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
 	display: none;
-	grid-area: form;
-	align-self: start;
-	padding: 2rem;
-	color: #ffffff;
-	background-color: #387922;
-	border-radius: 0.75rem;
-	scroll-margin-top: 9rem;
+	place-items: center;
+	padding: 1.25rem;
+	background-color: rgba(0, 0, 0, 0.55);
+}
+
+.thanks:target {
+	display: grid;
+	animation: fade-in 0.3s ease-out;
+}
+
+/* the white box with the text */
+.thanks article {
+	width: 100%;
+	max-width: 32rem;
+	padding: 2.5rem 2rem 2rem;
+	text-align: center;
+	background-color: #ffffff;
+	border-top: 0.5rem solid #387922;
+	border-radius: 1rem;
+	box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.25);
+	animation: pop-up 0.4s ease-out;
 }
 
 .thanks h3 {
 	margin-bottom: 1rem;
 	font-size: 2rem;
+	color: #387922;
 }
 
 .thanks p {
-	font-size: 1.25rem;
+	font-size: 1.125rem;
 }
 
-.thanks .button,
-.thanks .button:visited {
-	color: #387922;
-	background-color: #ffffff;
+/* animations: the dark layer fades in, the box grows and moves up a little */
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
 }
 
-.thanks .button:hover {
-	color: #ffffff;
-	background-color: #1d4211;
+@keyframes pop-up {
+	from {
+		opacity: 0;
+		transform: translateY(2rem) scale(0.9);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
 }
 
-.thanks:target {
-	display: block;
-}
+@media screen and (max-width: 768px) {
+	.thanks h3 {
+		font-size: 1.5rem;
+	}
 
-.thanks:target + .contact-form {
-	display: none;
+	.thanks p {
+		font-size: 1rem;
+	}
 }
