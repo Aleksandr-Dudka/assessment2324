@@ -223,6 +223,35 @@
 	}
 }
 
+/* required fields that were left empty (or an email that is not valid)
+	turn red after the visitor tries to send the form or leaves the field.
+	:user-invalid only matches after the visitor has interacted with the field,
+	so the form is not red when the page opens */
+.contact-form input:user-invalid,
+.contact-form select:user-invalid,
+.contact-form textarea:user-invalid {
+	background-color: #fdecee;
+	border-color: #d0021b;
+}
+
+.contact-form input:user-invalid:focus,
+.contact-form select:user-invalid:focus,
+.contact-form textarea:user-invalid:focus {
+	outline: 2px solid rgba(208, 2, 27, 0.3);
+}
+
+/* short red text under the field, shown only when the field is invalid */
+.error-message {
+	display: none;
+	margin-top: 0.25rem;
+	font-size: 0.875rem;
+	color: #d0021b;
+}
+
+.contact-form :user-invalid + .error-message {
+	display: block;
+}
+
 /* message after sending the form. The form sends the visitor to
 	contact.html#thanks, so this section becomes the :target and is shown
 	as a popup in the middle of the screen, over a dark layer */
