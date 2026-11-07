@@ -207,3 +207,31 @@
 		height: auto;
 	}
 }
+
+/* the photo and the word "is" share one grid cell; on narrower screens
+	the photo gets smaller so it does not cover the word */
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+	.why .photo {
+		width: 8rem;
+		margin-left: 0;
+	}
+
+	.why .photo img {
+		height: 8.5rem;
+	}
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+	.why h1 span {
+		font-size: 10rem;
+	}
+
+	.why .photo {
+		width: 10.5rem;
+		margin-left: 0;
+	}
+
+	.why .photo img {
+		height: 11rem;
+	}
+}
