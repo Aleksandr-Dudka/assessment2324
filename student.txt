@@ -2,4 +2,4 @@ Student name: Oleksandr Dudka
 Student number: 747887
 Student class: IT1B
 GitHub Repository: https://github.com/Aleksandr-Dudka/assessment2324
-GitHub Pages URL: https://aleksandr-dudka.github.io/assessment2324/index.html
+GitHub Pages URL: https://aleksandr-dudka.github.io/assessment2324/
